@@ -24,6 +24,7 @@ public class GameManager : MonoBehaviour
     private void Update() {
         if (isPlaying) {
             //currentScore += Time.deltaTime;
+            
         }
     }
 
