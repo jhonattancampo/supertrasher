@@ -18,6 +18,7 @@ public class UIManager : MonoBehaviour
     public void PlayButtonHandler() {
         gm.StartGame();
         startMenuUI.SetActive(false);
+        //test
     }
 
     public void ActivateGameOverUI() {
