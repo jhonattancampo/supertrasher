@@ -31,7 +31,7 @@ public class GenerateProp : MonoBehaviour
             // Mueve el objeto hacia la izquierda
             instantiatedProp.transform.position += Vector3.left * propSpeed * Time.deltaTime;
 
-            // Elimina el objeto al llegar a la posición asignada
+            // Elimina el objeto al llegar a la posiciï¿½n asignada
             if (instantiatedProp.transform.position.x < -12) 
             {
                 Destroy(instantiatedProp);
