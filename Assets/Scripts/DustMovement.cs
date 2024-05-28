@@ -8,10 +8,19 @@ public class NewBehaviourScript : MonoBehaviour
     public float dustSpeed = 1f; 
     public float destroyTime = 4f; 
     private GameObject instantiatedDustPrefab; 
+    private Coroutine spawnCoroutine;
 
     void Start()
     {
-        StartCoroutine(SpawnDustPrefab());
+        // Do not start the coroutine here
+    }
+
+    public void StartSpawning()
+    {
+        if (spawnCoroutine == null)
+        {
+            spawnCoroutine = StartCoroutine(SpawnDustPrefab());
+        }
     }
 
     // Ciclo de spawn
@@ -21,10 +30,10 @@ public class NewBehaviourScript : MonoBehaviour
         {
             instantiatedDustPrefab = Instantiate(dustPrefab, transform.position, transform.rotation);
 
-            // Destruye el objeto después de 'destroyTime' segundos
+            // Destruye el objeto despuÃ©s de 'destroyTime' segundos
             Destroy(instantiatedDustPrefab, destroyTime);
 
-            // tiempo de espera para generar el siguiente sprite
+            // Tiempo de espera para generar el siguiente sprite
             yield return new WaitForSeconds(4);
         }
     }
@@ -37,5 +46,4 @@ public class NewBehaviourScript : MonoBehaviour
             instantiatedDustPrefab.transform.position += Vector3.left * dustSpeed * Time.deltaTime;
         }
     }
-
 }

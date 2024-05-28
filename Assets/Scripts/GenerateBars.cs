@@ -6,10 +6,19 @@ public class GenerateBars : MonoBehaviour
     public GameObject barPrefab; 
     public float barSpeed = 1f; 
     private GameObject instantiatedBarPrefab; 
+    private Coroutine spawnCoroutine;
 
     void Start()
     {
-        StartCoroutine(SpawnBarPrefab());
+        // Do not start the coroutine here
+    }
+
+    public void StartSpawning()
+    {
+        if (spawnCoroutine == null)
+        {
+            spawnCoroutine = StartCoroutine(SpawnBarPrefab());
+        }
     }
 
     // Ciclo de spawn
@@ -22,7 +31,7 @@ public class GenerateBars : MonoBehaviour
             // Destruye el objeto 
             Destroy(instantiatedBarPrefab, 10f);
 
-            yield return new WaitForSeconds(10); // Espera para general el siguiente
+            yield return new WaitForSeconds(10); // Espera para generar el siguiente
         }
     }
 
@@ -35,5 +44,3 @@ public class GenerateBars : MonoBehaviour
         }
     }
 }
-
-

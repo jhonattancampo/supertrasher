@@ -1280,7 +1280,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1338736497}
-  - component: {fileID: 1338736496}
+  - component: {fileID: 1338736498}
   m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
@@ -1288,23 +1288,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1338736496
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1338736495}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 88540b820cd45ac44b63f0c52e986de0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  props:
-  - {fileID: 8397528980533015126, guid: 3a84b1931bc2bc840810c218f8b37100, type: 3}
-  - {fileID: 5246456284565930063, guid: b1bd02e3e7b8afd47aacafa863e2523d, type: 3}
-  - {fileID: 1390622761184660198, guid: 2b472eba8599b9b409c2680a9ad9ea34, type: 3}
-  propSpeed: 5
 --- !u!4 &1338736497
 Transform:
   m_ObjectHideFlags: 0
@@ -1320,6 +1303,23 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1338736498
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1338736495}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88540b820cd45ac44b63f0c52e986de0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  props:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  propSpeed: 5
 --- !u!1 &1429463799
 GameObject:
   m_ObjectHideFlags: 0
