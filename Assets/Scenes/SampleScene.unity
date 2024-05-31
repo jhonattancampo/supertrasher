@@ -867,6 +867,7 @@ GameObject:
   - component: {fileID: 787545696}
   - component: {fileID: 787545697}
   - component: {fileID: 787545698}
+  - component: {fileID: 787545699}
   m_Layer: 7
   m_Name: paso1_0
   m_TagString: Player
@@ -986,6 +987,27 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.71, y: 3.93}
   m_EdgeRadius: 0
+--- !u!95 &787545699
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 787545695}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 92c3f10c41a5b34449e7929e2e944272, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &800401024
 GameObject:
   m_ObjectHideFlags: 0
@@ -1297,7 +1319,7 @@ Transform:
   m_GameObject: {fileID: 1338736495}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 11.99, y: 1.42, z: 0.020757522}
+  m_LocalPosition: {x: 12.32, y: 1.42, z: 0.020757522}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1316,10 +1338,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   props:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 5246456284565930063, guid: b1bd02e3e7b8afd47aacafa863e2523d, type: 3}
+  - {fileID: 8397528980533015126, guid: 3a84b1931bc2bc840810c218f8b37100, type: 3}
+  - {fileID: 1390622761184660198, guid: 2b472eba8599b9b409c2680a9ad9ea34, type: 3}
   propSpeed: 5
+  propSpawnTime: 5
 --- !u!1 &1429463799
 GameObject:
   m_ObjectHideFlags: 0
