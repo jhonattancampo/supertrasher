@@ -3,7 +3,10 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Obstaculo
+  - BG
+  - Trash
   layers:
   - Default
   - TransparentFX
@@ -11,12 +14,12 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Ground
+  - Player
+  - BG
+  - Obstaculos
+  - Puntaje
+  - Trash
   - 
   - 
   - 
@@ -40,4 +43,13 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: BG
+    uniqueID: 3147309111
+    locked: 0
+  - name: Obstaculos
+    uniqueID: 1482030805
+    locked: 0
+  - name: Player
+    uniqueID: 2180574753
     locked: 0
